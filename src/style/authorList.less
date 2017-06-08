@@ -1,0 +1,64 @@
+.author-list {
+  padding-top: 64px;
+  //padding: 64px 10px 49px 10px;
+  .title {
+    padding-left: 10px;
+    width: 100%;
+    .h(60);
+    .lh(60);
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    .top(64);
+    .left(0);
+    background: #fff;
+    h3 {
+      margin: 0;
+      .fs(30);
+      color: #666;
+    }
+  }
+  .list{
+    //padding-top: 60px;
+
+    padding: 60px 10px 10px 10px;
+    .list-info{
+      overflow: hidden;
+      img{
+        .w(80);
+        .h(80);
+        border-radius: 50%;
+        float: left;
+        margin-top: 34px;
+      }
+      .info{
+        .w(240);
+        float: right;
+        border-bottom: 1px solid #ccc;
+        .padding(25,0);
+        h4{
+          .fs(25);
+          .lh(60);
+        }
+        p{
+          .fs(20);
+          color: #999;
+        }
+      }
+
+    }
+    .list-info:nth-last-child(1) .info{
+      border: none;
+    }
+  }
+
+  .list-hot{
+    .list;
+    padding-bottom: 55px;
+    padding-top: 0;
+  }
+
+  .title-hot {
+    .title;
+    position: inherit;
+  }
+}

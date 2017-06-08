@@ -1,0 +1,32 @@
+<div class="author-list">
+    <div class="title">
+        <h3>本周推荐</h3>
+    </div>
+
+    <div class="list" >
+        <div class="list-info" ng-repeat="author in data.authors">
+            <img ng-src="{{author.large_avatar}}" alt="">
+
+            <div class="info">
+                <h4 ng-bind="author.name"></h4>
+                <p ng-bind="author.editor_notes"></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title-hot">
+        <h3>热门作者</h3>
+    </div>
+
+    <div class="list-hot">
+        <div class="list-info" ng-repeat="author in dataHot.authors">
+            <img ng-src="{{author.large_avatar}}" alt="">
+
+            <div class="info">
+                <h4 ng-bind="author.name"></h4>
+                <p ng-bind="author.editor_notes"></p>
+            </div>
+        </div>
+    </div>
+</div>

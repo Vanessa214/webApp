@@ -12,10 +12,10 @@
 
     <nav-dir></nav-dir>
 
-    <div ui-view="home"></div>
-    <div ui-view="author"></div>
-    <div ui-view="content"></div>
-    <div ui-view="my"></div>
+    <div ng-show="type == 'home'" ui-view="home"></div>
+    <div ng-show="type == 'author'" ui-view="author"></div>
+    <div ng-show="type == 'content'" ui-view="content"></div>
+    <div ng-show="type == 'my'" ui-view="my"></div>
 
     <tabbar-dir></tabbar-dir>
 

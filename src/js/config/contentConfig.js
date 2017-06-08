@@ -10,8 +10,8 @@ angular.module('app').config(['$stateProvider','$urlRouterProvider',function ($s
                 controller:'HomeListController'
             },
             author:{
-                //templateUrl:'../views/home_tpl.html',
-                //controller:'HomeListController'
+                templateUrl:'../views/author_tpl.html',
+                controller:'AuthorListController'
             },
             content:{
                 //templateUrl:'../views/home_tpl.html',
