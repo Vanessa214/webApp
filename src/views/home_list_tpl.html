@@ -1,0 +1,22 @@
+<div class="content">
+    <div class="home-list" ng-repeat="item in data.posts">
+        <p class="tag" ng-bind="item.column.name"></p>
+        <h3 ng-bind="item.title"></h3>
+
+        <div ng-if="item.type == '1001'" class="post1">
+            <p class="text" ng-bind="item.abstract"></p>
+            <img src="images/tabicon/post_2.png" alt="">
+        </div>
+
+        <div ng-if="item.type == '1002'" class="post2">
+            <p class="text" ng-bind="item.abstract"></p>
+        </div>
+
+        <div ng-if="item.type == '1003'" class="post3">
+            <img src="images/tabicon/post_3.png" alt="">
+            <img src="images/tabicon/post_4.png" alt="">
+            <img src="images/tabicon/post_5.png" alt="">
+        </div>
+
+    </div>
+</div>

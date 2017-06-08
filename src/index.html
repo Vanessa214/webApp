@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app" ng-controller="WebController">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title>{{t}}</title>
+</head>
+<body>
+
+    <nav-dir></nav-dir>
+
+    <div ui-view="home"></div>
+    <div ui-view="author"></div>
+    <div ui-view="content"></div>
+    <div ui-view="my"></div>
+
+    <tabbar-dir></tabbar-dir>
+
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="js/index.js"></script>
+    <script>
+        document.getElementsByTagName('html')[0].style.fontSize = window.screen.width / 10 + 'px';
+    </script>
+</body>
+</html>

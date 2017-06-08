@@ -1,0 +1,20 @@
+<div class="tabbar">
+    <ul>
+        <li ng-click="changeColor('home')">
+            <img ng-src="{{type == 'home'?'images/tabicon/homeSel.png':'images/tabicon/home_icon.png'}}" alt="">
+            <p ng-class="{active:type == 'home'}">首页</p>
+        </li>
+        <li ng-click="changeColor('author')">
+            <img ng-src="{{type == 'author'?'images/tabicon/authorSel.png':'images/tabicon/author_icon.png'}}" alt="">
+            <p ng-class="{active:type == 'author'}">作者</p>
+        </li>
+        <li ng-click="changeColor('content')">
+            <img ng-src="{{type == 'content'?'images/tabicon/contentSel.png':'images/tabicon/content_icon.png'}}" alt="">
+            <p ng-class="{active:type == 'content'}">内容</p>
+        </li>
+        <li ng-click="changeColor('my')">
+            <img ng-src="{{type == 'my'?'images/tabicon/mySel.png':'images/tabicon/my_icon.png'}}" alt="">
+            <p ng-class="{active:type == 'my'}">我的</p>
+        </li>
+    </ul>
+</div>
